@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cormac O’Shea — Cloud Infrastructure & Systems</title>
+  <meta name="description" content="Resume of Cormac O’Shea — Cloud infrastructure, AWS, Azure, Linux, networking, systems administration." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --card:#0f1115;
+      --ink:#e8e8ea;
+      --muted:#b7b7c2;
+      --accent:#6ee7b7;
+      --chip:#1a1d24;
+      --line:#1f2430;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin-inline:auto;padding:32px 20px}
+    header{
+      display:grid;gap:10px;align-items:center;
+      grid-template-columns:1fr; padding:24px; border:1px solid var(--line); border-radius:18px;
+      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0)) , var(--card);
+    }
+    h1{font-size:34px;line-height:1.2;margin:0 0 4px 0}
+    .subtitle{color:var(--muted);margin:0}
+    .contact{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+    .pill{background:var(--chip);padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+    main{display:grid;grid-template-columns: 1.1fr .9fr; gap:22px; margin-top:22px}
+    section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+    h2{font-size:18px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin:0 0 12px 0}
+    h3{margin:0 0 6px 0;font-size:16px}
+    .row{display:grid;grid-template-columns: 1fr auto;gap:10px}
+    .when{color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+    li{margin:4px 0}
+    .grid-2{columns:2;column-gap:18px}
+    .chiplist{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--line);border-radius:10px;padding:6px 8px;color:var(--muted);font-size:13px}
+    .small{font-size:14px;color:var(--muted)}
+    footer{margin-top:22px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    .counter{display:inline-flex;align-items:center;gap:6px;background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px}
+    @media (max-width:900px){ main{grid-template-columns:1fr} }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Cormac O’Shea",
+    "email":"mailto:Corm11@hotmail.com",
+    "telephone":"+353879549932",
+    "address":{"@type":"PostalAddress","streetAddress":"20 Ardee Road, Rathmines","addressLocality":"Dublin 6","addressCountry":"IE"},
+    "url":""
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Cormac O’Shea</h1>
+        <p class="subtitle">Cloud Infrastructure • Systems Administration • Networking</p>
+        <div class="contact">
+          <span class="pill">Dublin 6, Ireland</span>
+          <a class="pill" href="mailto:Corm11@hotmail.com">Corm11@hotmail.com</a>
+          <a class="pill" href="tel:+353879549932">+353 87 954 9932</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT: Experience -->
+      <section>
+        <h2>Work Experience</h2>
+
+        <div class="row">
+          <div>
+            <h3>Systems Administrator — Enovation Solutions</h3>
+            <div class="small">Learning Management Systems (Moodle); servers, vhosts, databases; network & infrastructure</div>
+          </div>
+          <div class="when">Jun 2024 – Present</div>
+        </div>
+        <ul>
+          <li>Client OS admin & deployment: Linux (Ubuntu), macOS, Windows.</li>
+          <li>Windows Server 2019, AD/Entra ID, DNS/DHCP, PowerShell.</li>
+          <li>Ubuntu server deployment, virtual hosts (MySQL), PuppetMaster18, SSL, SSH, Bash.</li>
+          <li>SQL setup in PHP; third-party DNS (ProBIND).</li>
+          <li>VMware vSphere; AWS & Azure administration, VM hosting, failover & backup.</li>
+          <li>Data centre racking; Cisco switch/router/firewall config; VPN; CLI.</li>
+          <li>ESET Web Console & endpoint AV; Nagios & Munin monitoring.</li>
+          <li>Google Cloud user/device admin; Microsoft 365 & Azure AD admin.</li>
+          <li>Ticketing: Mantis, Asana; end-user troubleshooting; vhosts & containers.</li>
+        </ul>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin:14px 0" />
+
+        <div class="row">
+          <div>
+            <h3>Level 2 IT Support Engineer — Children’s Health Ireland</h3>
+            <div class="small">Onsite engineer in a high-priority, post-incident environment</div>
+          </div>
+          <div class="when">Jun 2023 – Jan 2024</div>
+        </div>
+        <ul>
+          <li>First-line & onsite support via tickets, email, phone, walk-ins; strict SLA handling.</li>
+          <li>Install & troubleshoot in-house apps (Ward Enquiry, IPIMS) and printing solutions.</li>
+          <li>Office 2016/365, Teams, Webex troubleshooting.</li>
+          <li>On-prem AD/DC admin, groups, computers, users; file shares & permissions.</li>
+          <li>PXE imaging & device deployment; Windows 7/10 fleet support.</li>
+        </ul>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin:14px 0" />
+
+        <div class="row">
+          <div>
+            <h3>Level 2 IT Support Engineer — Eir Evo</h3>
+            <div class="small">Service desk, field engineer & systems admin across 200+ managed clients</div>
+          </div>
+          <div class="when">Sep 2021 – 2023</div>
+        </div>
+        <ul>
+          <li>First contact triage & resolution; escalation across multi-tenant queues.</li>
+          <li>Windows 7/10/11, Server 2012–2020, Hyper-V, VMware.</li>
+          <li>Build & deploy laptops/PCs; Azure, Autopilot, Intune, MDM, XenMobile, iOS portal, Citrix.</li>
+          <li>Microsoft 365/Teams/Exchange/AAD admin; Microsoft Defender.</li>
+          <li>Vendor liaison: Dell, Lenovo, HP, Sysco, Image Systems, Jet Reports, Q&amp;A.</li>
+        </ul>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin:14px 0" />
+
+        <div class="row">
+          <div>
+            <h3>Systems Administrator — Charts Beds</h3>
+            <div class="small">Global support for Charts PMS (on-prem & cloud), infra admin & training</div>
+          </div>
+          <div class="when">Oct 2014 – Feb 2020</div>
+        </div>
+        <ul>
+          <li>Product learning, troubleshooting & training for Charts PMS.</li>
+          <li>Infra instance admin via Olympus & AWS EC2; Windows Server 2008/2012.</li>
+          <li>Client OS support (Windows 7/XP/Vista), documentation & staff/client training.</li>
+          <li>Log analysis (application & ptools); HTML.</li>
+          <li>3rd-party integrations: Booking.com, Hostelworld, SiteMinder, Agoda, Expedia.</li>
+          <li>Global customer support (USA, UK, EU, Singapore, Australia, Africa, Canada).</li>
+        </ul>
+      </section>
+
+      <!-- RIGHT: Skills / Education / Certs -->
+      <section>
+        <h2>Skills Snapshot</h2>
+        <div class="chiplist">
+          <span class="chip">AWS (S3, EC2, IAM)</span>
+          <span class="chip">Azure</span>
+          <span class="chip">Linux (Ubuntu)</span>
+          <span class="chip">Windows Server & AD</span>
+          <span class="chip">Networking (Cisco)</span>
+          <span class="chip">VMware vSphere</span>
+          <span class="chip">PowerShell & Bash</span>
+          <span class="chip">MySQL / SQL</span>
+          <span class="chip">Monitoring (Nagios, Munin)</span>
+          <span class="chip">Intune / Autopilot</span>
+          <span class="chip">Security (ESET, Defender)</span>
+        </div>
+
+        <div style="height:14px"></div>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>NFQ Diploma (Level 8), Cloud Infrastructure & Networking</strong> — IT Sligo, 2022</li>
+          <li><strong>Level 7 Modular Diploma, Python Programming</strong> — CCT College, 2021</li>
+          <li><strong>Additional Diplomas & Certs</strong> — Various (FETAC, City & Guilds, Coursera, E-COLLEGE)</li>
+        </ul>
+
+        <div style="height:14px"></div>
+        <h2>Certifications</h2>
+        <div class="grid-2">
+          <ul>
+            <li>AWS Cloud Practitioner — 2025</li>
+
+            <li>Microsoft Azure Associate AZ-104 — 2023</li>
+            <li>Microsoft Azure Fundamentals AZ-900 — 2022</li>
+
+            <li>Comptia Security+ — 2020</li>
+          </ul>
+          <ul>                   
+            <li>CCNA — 2021</li>
+            <li>MCTS/MCP — 2014</li>
+            <li>Google IT Support Specialist — 2021</li>
+            <li>Comptia A+ — 2013/2021</li>
+            <li>Network+ — 2013</li>
+            <li>FETAC L5 Computer & Network Maintenance — 2012</li>
+            <li>City & Guilds L2 IT Maintenance — 2012</li>
+          </ul>
+        </div>
+
+        <div style="height:14px"></div>
+        <h2>Other Education</h2>
+        <ul>
+          <li>Personal Development (NFQ L6) — IT Sligo, 2022</li>
+          <li>E-Business & IT Applications (FETAC L5) — 2011</li>
+          <li>Manual & Computerised Accounts (FETAC L5) — 2011</li>
+          <li>Security Guarding (FETAC L4) — 2008</li>
+          <li>Leaving Certificate — 2007</li>
+        </ul>
+
+        <div style="height:14px"></div>
+        <h2>Other Experience</h2>
+        <ul>
+          <li>Reserve Defence Forces — 62 Cavalry Squadron (3-star Private)</li>
+          <li>Retail & Stocktaking roles (Tesco, Take Stock)</li>
+        </ul>
+
+        <div style="height:14px"></div>
+        <h2>Hobbies & Interests</h2>
+        <ul>
+          <li>Martial arts:, Nei Kung (Green Belt), Brazilian Jiu-Jitsu Blue Belt</li>
+          <li>Reading; travel; music festivals; mindfulness & meditation</li>
+          
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="small">© <span id="year"></span> Cormac O’Shea</div>
+      <div class="counter">
+        <span>Visitors:</span> <strong id="visitor-count">—</strong>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Visitor counter hook — replace API_URL with your API Gateway endpoint later.
+ const API_URL = "https://adpt20owf1.execute-api.eu-north-1.amazonaws.com/prod/PythonVisitorCount";
+
+    if (API_URL) {
+      fetch(API_URL)
+        .then(r => r.json())
+        .then(d => { document.getElementById('visitor-count').textContent = d.count ?? d; })
+        .catch(() => { document.getElementById('visitor-count').textContent = "—"; });
+    }
+  </script>
+</body>
+</html>
